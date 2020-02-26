@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Kimberley";
+    src: url(./PressStart2P-Regular.2c404fd06cd67770807d.ttf) format("truetype");
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #b6bc68;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: 'Kimberley',cursive;
+    margin: auto;
+    width: fit-content;
+    color: #503F2D;
+    font-size: 60px;
+    padding: 35px;
+}
+
+.kish {
+    position: absolute;
+    width: 300px;
+    transform: rotateZ(45deg) translateX(-173px) translateY(-54px);
+}
+
+.content {
+    padding-top: 180px;
+    overflow: auto;
+}
+.imgContainer {
+    width: 26%;
+    display: inline-block;
+    margin: 4px;
+    transition: width ease 0.5s;
+    position: relative;
+}
+
+.imgContainer:hover {
+    width: 40%;
+}
+
+.img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.landscape {
+    width: 46%;
+}
+
+.landscape:hover {
+    width: 60%;
+}
+
+.name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    background-color: #b6bc68;
+    display: none;
+    font-family: 'Kimberley',cursive;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    margin-bottom: inherit;
+    height: 12%;
+    padding-top: 9%;
+    font-size: 18px;
+}
+
+.imgContainer:hover .name {
+    display: block;
+}
+
+.pushArea {
+    margin-right: 10%;
+    width: 30%;
+    position: fixed;
+    right: 0;
+    max-width: 450px;
+}
+
+.imgArea {
+    width: 50%;
+    margin-left: 10%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.announceArea {
+    position: relative;
+    height: 200px;
+    border: solid #503F2D 10px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.textarea {
+    height: 75%;
+    width: 100%;
+    font-family: 'Kimberley',cursive;
+    font-size: 20px;
+    color: #76BEBD;
+    border: 0;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: #76bebd;
+    border-radius: 25px;
+    font-family: 'Kimberley',cursive;
+    color: #503F2D;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.push {
+    font-size: 25px;
+    height: 25%;
+}
+
+.action {
+    margin-bottom: 16px;
+}
+
+
+.textarea:focus {
+    outline: none;
+}
