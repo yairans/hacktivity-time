@@ -46,7 +46,7 @@ function announce() {
 			socket.send(message);
 		};
 	}
-	showAlert('Announcement has sent');
+	showAlert('Announcement');
 }
 
 function selfie() {
@@ -58,12 +58,12 @@ function selfie() {
 			socket.send(message);
 		};
 	}
-	showAlert('Selfie action has sent');
+	showAlert('Selfie action');
 }
 
 function showAlert(str) {
 	const alert = document.getElementsByClassName('alert')[0];
-	alert.innerText = str;
+	alert.innerText = str + ' was sent';
 	alert.className = "alert show";
 	setTimeout(()=>{
 		alert.className = "alert";
