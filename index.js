@@ -7,7 +7,6 @@ socket.onopen = function () {
 socket.onmessage = function (message) {
 	try {
 		const parseMessage = JSON.parse(message.data);
-		console.error(parseMessage);
 		appendImg(parseMessage)
 	} catch (e) {
 		console.error(e);
@@ -47,6 +46,7 @@ function announce() {
 			socket.send(message);
 		};
 	}
+	showAlert('Announcement has sent');
 }
 
 function selfie() {
@@ -58,6 +58,17 @@ function selfie() {
 			socket.send(message);
 		};
 	}
+	showAlert('Selfie action has sent');
+}
+
+function showAlert(str) {
+	const alert = document.getElementsByClassName('alert')[0];
+	alert.innerText = str;
+	alert.className = "alert show";
+	setTimeout(()=>{
+		alert.className = "alert";
+	},2000);
+
 }
 
 // setTimeout(()=> {
